@@ -34,9 +34,16 @@ $('.search-btn').click(() => {
 
 $('document').ready(getdata("shershaah"))
 
-const arr = ['a', 'b', 'c', 'd', 'e']
 
 
+
+
+
+const arr1=['avengers','batman','avengers','avengers','avengers']
+for(i=0 ; i < arr1.length ; i++){
+  const movie=new Movie("name", "director", "actors", "release", "plot", "poster", "genre", "language", "rating")
+   console.log(movie.getMoviename())
+}
 
 /*
 
@@ -44,7 +51,8 @@ const arr = ['a', 'b', 'c', 'd', 'e']
         <button class="btn">Add</button>
     </div>
     
-    */
+    
+    const arr = ['a', 'b', 'c', 'd', 'e']
 for(i=0 ; i < arr.length ; i++){
 
    const layout = `
@@ -53,4 +61,4 @@ for(i=0 ; i < arr.length ; i++){
 
    $('.container').append(layout)
 }
-
+*/

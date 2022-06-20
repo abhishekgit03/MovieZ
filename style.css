@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.container{
+    color:white;
+}
+
 .main{
 
     z-index: 2;
@@ -13,17 +17,17 @@
 }
 
 body {
+    
     top:0;
     left:0;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    background-size:contain;
-    background-repeat: none;
+    background-size:cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image:url("https://www.wallpaperup.com/uploads/wallpapers/2015/12/12/859126/5b431ce5733d1553d3b7bf0efc11412e-1000.jpg");
+    background-color: #1c1c1bff;
     z-index: 0
 }
 
@@ -31,9 +35,10 @@ body {
 
 .box
 {
+  opacity:20;
   padding: 50px;
   width: 100%;
-  background-color: #1c1c1bff;
+  background-color: rgb(43, 42, 48);
   display: flex;
   margin:auto;
 }
@@ -110,11 +115,7 @@ body {
 }
 
 
-.search{
-    
-    margin-left:0;
-    display: flex;
-}
+
 
 .search-bar {
     border: none;
@@ -128,9 +129,19 @@ body {
 }
 
 .search-btn{
-
-    padding: 10px;
+    margin-left: 10px;
+    color:#ce4a7eff;
+    background-color:#860686;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 15px;
     margin-right: auto;
+}
+.search-btn:hover{
+    color:#3c1053ff;
+    cursor:pointer;
+    background-color:#ce4a7eff;
+    
 }
 
 ::placeholder { 
@@ -140,7 +151,7 @@ body {
 
 .nav{
     
-    position: fixed;
+    position: sticky;
     top:0;
     width: 100%;
     padding: 20px 30px;
@@ -151,11 +162,19 @@ body {
     
 }
 
+
 .logo{
     letter-spacing: 8px;
-    font-size: 22px;
-    font-weight:bolder;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
     color:rgb(17, 13, 59)
+}
+
+.logoheadline{
+    font-size: 23px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    color:white;
 }
 
 .nav-links{
@@ -186,13 +205,33 @@ body {
 
 @media screen and (max-width: 768px){
 
-.box
+.movie
 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+     color:#ce4a7eff;
+}
+.rating
+{
+    font-size:20px;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    background-color: #ce4a7eff;
+    font-weight: bolder;
+    color:#3c1053ff;
+}
+.box
+{ 
+  margin-top: 50px;
   padding: 50px;
   width: auto;
   background-color: #1c1c1bff;
   display: flex;
   flex-direction: column;
+  line-height:50px;
   
 }
 .nav-links{
@@ -209,5 +248,25 @@ body {
     z-index: 2;
 }
 
+.search{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.search-btn{
+
+    padding: 10px 30px;
+    color:#ce4a7eff;
+    background-color: #3c1053ff;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    
+}
+.search-btn:hover{
+    color:#3c1053ff;
+    background-color: #ce4a7eff;
+}
 
 }
